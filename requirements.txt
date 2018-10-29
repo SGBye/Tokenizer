@@ -1,0 +1,12 @@
+dicttoxml==1.7.4
+docopt==0.6.2
+docx==0.2.4
+nltk==3.3
+nltk4russian==1.0
+pymorphy2==0.8
+pymorphy2-dicts==2.4.393442.3710985
+pymystem3==0.2.0
+pyparsing==2.2.2
+six==1.11.0
+
+
