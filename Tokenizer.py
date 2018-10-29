@@ -19,25 +19,7 @@ for par in text.split("\n"):
         sent_data = {"sentence": sent, "tokens": [{"value": v[0], "type": v[1], "ID": number} for number, v in enumerate(nltk.pos_tag(nltk.word_tokenize(sent), lang='rus'))]}
         par_data["sentences"].append(sent_data)
 
-
 my_xml = dicttoxml(result, attr_type=False)
 
 with open(XML_FILE, "w", encoding="UTF-8") as file:
     file.write(my_xml.decode("UTF-8"))
-
-print(my_xml.decode("UTF-8"))
-print(json.dumps(result, ensure_ascii=False))
-
-# test_list = []
-# for word in tokens:
-#     test_list.append(word)
-#     try:
-#         test_list.append(morph.parse(word)[0].normal_form)
-#     except AttributeError:
-#         pass
-# print(test_list)
-
-
-
-
-
